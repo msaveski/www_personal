@@ -10,7 +10,7 @@ jekyll serve
 
 Push to the ML web directory:
 ```
-scp -r _site/ msaveski@ml.media.mit.edu:public_html/
+./__deploy.sh
 ```
 More info on the [Media Lab wiki](http://wiki.media.mit.edu/view/Necsys/WebPagePersonal).
 
