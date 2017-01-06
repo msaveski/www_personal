@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Martin Saveski | Network A/B Testing</title>
+  <meta name="description" content="Homepage of Martin Saveski">
+  <meta name="author" content="Martin Saveski">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/~msaveski/libs/external/skeleton/normalize.css>
+  <link rel="stylesheet" href=/~msaveski/libs/external/skeleton/skeleton.css>
+  <link rel="stylesheet" href=/~msaveski/libs/custom/my_css.css>
+
+  <!-- JQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+  <script src=/~msaveski/libs/external/jquery-3.1.1.min.js></script>
+
+  <!-- Font-Awesome
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/~msaveski/libs/external/font-awesome-4.7.0/css/font-awesome.min.css>
+
+  <!-- Skeleton tabs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/~msaveski/libs/external/skeleton_tabs/skeleton-tabs.css>
+  <script src=/~msaveski/libs/external/skeleton_tabs/skeleton-tabs.js></script>
+
+  <!-- Timeline 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href=/~msaveski/libs/external/timeline.css>
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!--<link rel="stylesheet" href=/~msaveski/libs/external/github-prettify-theme.css>-->
+  <script src=/~msaveski/libs/custom/my_js.js></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href=/~msaveski/libs/icon.png>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+
+    <section class="header">
+      <div class="row">
+        <div class="three columns">
+          <a href="/~msaveski/"><img class="u-max-full-width" src='/~msaveski/assets/profile-pics/30_large.jpg'></a>
+        </div>
+        <div class="nine columns main-description">
+            <h1>Martin Saveski</h1>
+            <p>PhD Student, MIT Media Lab</p>
+            <p>msaveski@mit.edu</p>
+            <p>
+              <span onclick="window.open('https://twitter.com/msaveski')" style="cursor: pointer">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </span>
+
+              <span onclick="window.open('https://www.linkedin.com/in/msaveski')" style="cursor: pointer">
+                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              </span>
+
+              <span onclick="window.open('https://github.com/msaveski')" style="cursor: pointer">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </span>
+            </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          <li class="navbar-item"><a class="navbar-link" href=/~msaveski/index.html#bio>Bio</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/~msaveski/index.html#publications>Publications</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/~msaveski/index.html#projects>Projects</a></li>
+          <li class="navbar-item"><a class="navbar-link" href=/~msaveski/index.html#resume>Resume</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="docs-section">
+
+  
+    <div class="title-subtitle">
+      <h3>Network A/B Testing</h3>
+      <h5>Testing for Network Effects</h5>
+    </div>
+  
+
+  <p>Before rolling out new LinkedIn features—for example, a new way of ranking posts in the LinkedIn feed—it’s a common practice to compare the proposed changes against the current system. This is done through A/B testing: A is the current system and B is the new system we want to test. When members come on the website most of them will get the usual experience (A), but some will be exposed to the new feature (B). This allows us to measure and understand how the new feature influences the behavior of the members. At the core of this statistical comparison is the so-called independence assumption: the behavior of one member is not influenced by the behavior of others. In a platform such as LinkedIn this assumption is broken by design: members are linked through their connections and informed about each other’s behavior. This presents new challenges when applying the classical A/B testing practices. The goals of this project are: (i) to propose a new framework for A/B testing in networks, and (ii) apply it to test new LinkedIn features.</p>
+
+<figure class="image">
+  <img src="/~msaveski/assets/projects/2016_network-ab/main.jpg" alt="The intuition behind using hierechical designs for testing network effects" style="width: 75%" />
+  <figcaption><b>The intuition behind using hierechical designs for testing network effects</b></figcaption>
+</figure>
+
+
+</div>
+
+<div class="docs-section"></div>
+
+  </div>
+
+  <!-- Google Analytics -->
+    <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', '123']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

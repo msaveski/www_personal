@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Fingerprint Verification System | Martin Saveski</title>
+	<link rel="stylesheet" id="suits-fonts-css" href="./files/css" type="text/css" media="all">
+	<link rel="stylesheet" id="suits-style-css" href="./files/style.css" type="text/css" media="all">
+	<script type="text/javascript" src="./files/jquery.js"></script>
+	<script type="text/javascript" src="./files/jquery-migrate.min.js"></script>
+	<style type="text/css" id="custom-background-css">
+	body.custom-background { background-color: #ffffff; }
+	</style>
+</head>
+
+<body class="page page-id-122 page-template-default custom-background single-author full-width no-footer-sidebar" style="">
+	<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+			<a class="home-link" href="./index.htm" title="Martin Saveski" rel="home">
+				<h1 class="site-title">Martin Saveski</h1>
+				<h2 class="site-description">Machine Learner. M.Sc. in Data Mining. In a never-ending quest for knowledge.</h2>
+			</a>
+
+			<div id="navbar" class="navbar">
+				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
+					<h3 class="menu-toggle">Menu</h3>
+					<div class="menu-menu-1-container"><ul id="menu-menu-1" class="nav-menu"><li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41"><a href="./index.htm">About me</a></li>
+<li id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83"><a href="./curriculum-vitae.htm">Curriculum Vitae</a></li>
+<li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="./publications.htm">Publications</a></li>
+<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-147"><a href="./projects.htm">Projects</a>
+<ul class="sub-menu">
+	<li id="menu-item-162" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-162"><a href="./cold-start-recommendations.htm">Cold-start Recommendations</a></li>
+	<li id="menu-item-161" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-161"><a href="./iterative-hybrid-algorithm.htm">Iterative Hybrid Algorithm</a></li>
+	<li id="menu-item-167" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-167"><a href="./sentiment-analysis.htm">Sentiment Analysis of Financial Tweets</a></li>
+	<li id="menu-item-163" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-163"><a href="./automatic-wordnet-construction.htm">Automatic Wordnet Construction</a></li>
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-122 current_page_item menu-item-148"><a href="./fingerprint-verification-system.htm">Fingerprint Verification System</a></li>
+	<li id="menu-item-121" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-121"><a href="./ai-agent-for-connect-four.htm">AI agent for Connect Four</a></li>
+</ul>
+</li>
+<li id="menu-item-164" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-164"><a href="./code.htm">Code</a></li>
+<li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55"><a href="./collaborators.htm">Collaborators</a></li>
+<li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a href="./contact.htm">Contact</a></li>
+</ul></div>									</nav><!-- #site-navigation -->
+			</div><!-- #navbar -->
+		</header><!-- #masthead -->
+
+		<div id="main" class="site-main">
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+										
+<article id="post-122" class="post-122 page type-page status-publish hentry">
+	<header class="entry-header">
+		
+		<h1 class="entry-title">Fingerprint Verification System</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>This is system I have developed as a project for an introductory Image Processing course during the last year of my undergraduate studies.</p>
+<p style="text-align: justify;">The text below summarizes the main processing steps required for verifying if the fingerprint image belongs to a given person. All details are provided in the <a href="./data/fp_report.pdf" target="_blank">project&nbsp;report</a>. Also, the <a href="./data/fp_slides.pdf" target="_blank">slides</a>&nbsp;I have prepared for presentation in class provide a good summary (slightly more detailed than what is given below).</p>
+<h2>SUMMARY</h2>
+<p>The process consistis of the following steps:</p>
+<ul>
+<li>Fingerprint Segmentation</li>
+<li>Image Enhancement
+<ul>
+<li>Normalization</li>
+<li>Orientation Estimation</li>
+<li>Frequency Estimation</li>
+<li>Filtering</li>
+</ul>
+</li>
+<li>Binarization</li>
+<li>Skeletonization</li>
+<li>Feature Extraction (Minutiae)</li>
+<li>Fingerprint Matching</li>
+</ul>
+<h2>Fingerprint Segmentation</h2>
+<ul>
+<li>Separates foreground from background regions</li>
+<li>Fingerprint regions have higher gray scale variance</li>
+</ul>
+<p style="text-align: center;"><span style="line-height: 1.5em;"><img class=" wp-image-126 aligncenter" alt="segmentation" src="./files/segmentation.png" width="700" height="340"></span><em><span style="line-height: 1.5em;">Image Segmentation based on local variance thresholding</span></em></p>
+<h2>Fingerprint Image Enhancement</h2>
+<p>The quality of ridge structure of the FP image is essential&nbsp;for successful feature extraction. In this project, we adopt the&nbsp;Gabor filter as it is both frequency and orientation selective.&nbsp;<span style="line-height: 1.5em;">The filtering includes the following steps: (1)</span><span style="line-height: 1.5em;">&nbsp;Normalization, (2)&nbsp;</span><span style="line-height: 1.5em;">Orientation Estimation,&nbsp;</span><span style="line-height: 1.5em;">(3) Ridge Frequency Estimation.</span></p>
+<p style="text-align: center;"><img class=" wp-image-129 aligncenter" alt="gabor" src="./files/gabor.png" width="700" height="340"><em><span style="line-height: 1.5em;">Fingerprint Image Enhancement with Gabor Filter</span></em></p>
+<h2 style="text-align: left;">Binarization</h2>
+<p>Refers to the process of conversion from grayscale to binary images. &nbsp;It is useful step as it improves the&nbsp;contrast between the ridges and valleys.</p>
+<p style="text-align: center;"><span style="line-height: 1.5em;"><img class=" wp-image-128 aligncenter" alt="binarization" src="./files/binarization.png" width="700" height="340"></span><em>Binarization based on global threshold</em></p>
+<h2>Skeletonization</h2>
+<p>Thinning the foreground regions until one pixel wide.</p>
+<p style="text-align: center;"><img class=" wp-image-127 aligncenter" alt="skeletonization" src="./files/skeletonization.png" width="700" height="340"><em style="line-height: 1.5em;">Skeletonization of a binariazed image</em></p>
+<h2 style="text-align: left;">Minutiae Extraction</h2>
+<p>Performed by using the concept of Crossing Number, <em>CN</em>:</p>
+<p style="text-align: center;"><img class="size-medium wp-image-125 aligncenter" alt="menutia-formula" src="./files/menutia-formula-300x58.png" width="300" height="58"></p>
+<p>All minutiae extracted by a simple image scan of the skeletonized image:</p>
+<ul>
+<li>CN = 1, correspond to ridge ending</li>
+<li>CN = 3, corresponds to bifurcation</li>
+</ul>
+<p>This is illustrated in the following figure.</p>
+<p style="text-align: center;"><img class=" wp-image-124 aligncenter" alt="menitua extraction" src="./files/menitua-extraction.png" width="710" height="233"><em style="line-height: 1.5em;">Intuition behind the CN number&nbsp;(Maltoni et al., 2009)</em></p>
+<h2 style="text-align: left;">Minutiae Extraction</h2>
+<p>All minutiae stored as (<em>x, y, θ , CN</em>) quadruples where — <em>x, y</em>: the spatial coordinates;&nbsp;<em>θ</em>: orientation;&nbsp;<em>CN</em>: the Crossing Number.</p>
+<p style="text-align: center;"><img class=" wp-image-130 aligncenter" alt="men-extraction" src="./files/men-extraction.png" width="700" height="340"><em style="line-height: 1.5em;">Minutiae detected on a skeletonized image</em></p>
+<h2 style="text-align: left;">Fingerprint Matching</h2>
+<p><span style="line-height: 1.5em;">Determines the degree of similarity between two fingerprint images.&nbsp;</span>Attempts to find the alignment of the images which will result in maximum number of minutiae pairings.&nbsp;Must cope with: displacement, r<span style="line-height: 1.5em;">otation, n</span>on-linear distortion, n<em style="line-height: 1.5em;"><span style="line-height: 1.5em;">oise.</span></em></p>
+<p><span style="line-height: 1.5em;">The matching algorithm adopted consists of 3 step:</span></p>
+<ol>
+<li>Registration: finding the ‘best’ transformation which when applied to the one of the images will result in maximum overlapping minutiae.</li>
+<li>Minutiae Pairing: minutiae are paired if their difference in<em> x, y, θ</em> is within the range of the tolerance box.</li>
+<li>Matching Score:</li>
+</ol>
+<p style="text-align: center;"><img class=" wp-image-135 aligncenter" alt="matchinscore" src="./files/matchinscore.png" width="168" height="52"></p>
+<p style="text-align: center;"><em>m</em> – paired minutiae,<br>
+<em>n</em> – minutiae within the bounding box</p>
+<p>&nbsp;</p>
+			</div><!-- .entry-content -->
+
+	</article><!-- #post -->
+							
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+
+		</div><!-- #main -->
+		<footer id="colophon" class="site-footer" role="contentinfo">
+			
+			<div class="site-info-container">
+				<div class="site-info">
+										Proudly powered by <a href="http://wordpress.org/" title="Semantic Personal Publishing Platform">WordPress</a>					<span class="sep"> · </span>
+					Theme: Suits by <a href="http://www.themeweaver.net/" title="Theme Developer" rel="designer">Theme Weaver</a>				</div><!-- .site-info -->
+			</div><!-- .site-info-container -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+
+	<script type="text/javascript" src="./files/functions.js"></script>
+
+</body></html>

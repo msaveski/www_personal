@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Sentiment Analysis of Financial Tweets | Martin Saveski</title>
+	<link rel="stylesheet" id="suits-fonts-css" href="./files/css" type="text/css" media="all">
+	<link rel="stylesheet" id="suits-style-css" href="./files/style.css" type="text/css" media="all">
+	<script type="text/javascript" src="./files/jquery.js"></script>
+	<script type="text/javascript" src="./files/jquery-migrate.min.js"></script>
+	<style type="text/css" id="custom-background-css">
+	body.custom-background { background-color: #ffffff; }
+	</style>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-46778883-1', 'martinsaveski.com');
+	  ga('send', 'pageview');
+
+	</script>
+</head>
+
+<body class="page page-id-165 page-template-default custom-background single-author full-width no-footer-sidebar" style="">
+	<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+			<a class="home-link" href="./index.htm" title="Martin Saveski" rel="home">
+				<h1 class="site-title">Martin Saveski</h1>
+				<h2 class="site-description">Machine Learner. M.Sc. in Data Mining. In a never-ending quest for knowledge.</h2>
+			</a>
+
+			<div id="navbar" class="navbar">
+				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
+					<h3 class="menu-toggle">Menu</h3>
+					<div class="menu-menu-1-container"><ul id="menu-menu-1" class="nav-menu"><li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41"><a href="./index.htm">About me</a></li>
+<li id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83"><a href="./curriculum-vitae.htm">Curriculum Vitae</a></li>
+<li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="./publications.htm">Publications</a></li>
+<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-147"><a href="./projects.htm">Projects</a>
+<ul class="sub-menu">
+	<li id="menu-item-162" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-162"><a href="./cold-start-recommendations.htm">Cold-start Recommendations</a></li>
+	<li id="menu-item-161" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-161"><a href="./iterative-hybrid-algorithm.htm">Iterative Hybrid Algorithm</a></li>
+	<li id="menu-item-167" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-165 current_page_item menu-item-167"><a href="./sentiment-analysis.htm">Sentiment Analysis of Financial Tweets</a></li>
+	<li id="menu-item-163" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-163"><a href="./automatic-wordnet-construction.htm">Automatic Wordnet Construction</a></li>
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="./fingerprint-verification-system.htm">Fingerprint Verification System</a></li>
+	<li id="menu-item-121" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-121"><a href="./ai-agent-for-connect-four.htm">AI agent for Connect Four</a></li>
+</ul>
+</li>
+<li id="menu-item-164" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-164"><a href="./code.htm">Code</a></li>
+<li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55"><a href="./collaborators.htm">Collaborators</a></li>
+<li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a href="./contact.htm">Contact</a></li>
+</ul></div>									</nav><!-- #site-navigation -->
+			</div><!-- #navbar -->
+		</header><!-- #masthead -->
+
+		<div id="main" class="site-main">
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+										
+<article id="post-165" class="post-165 page type-page status-publish hentry">
+	<header class="entry-header">
+		
+		<h1 class="entry-title">Sentiment Analysis of Financial Tweets</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p style="text-align: justify;">This is a work done during my stay at the Jozef Stefan Institute in Ljubljana (Slovenia) in the context of the European project FIRST: large-scale information extraction and integration infrastructure for supporting financial decision-making (<a href="http://project-first.eu/" target="_blank">http://project-first.eu</a>). The results were published in a workshop paper at ECML’11. More details can be found&nbsp;<a href="./data/ecml2011.pdf" target="_blank">here</a>.</p>
+<p style="text-align: justify;">The objective was to develop a system for real-time monitoring of the stock market discussions on Twitter and analyzing their sentiment. Users have seen Twitter as a platform suitable for expressing opinions about stocks. Proof for this is the informal convention to use “$” as a prefix to the stock symbol when referring to a stock. For instance, the “$GOOG” tag indicates that the tweet discusses the Google stocks or the “$AAPL” tag refers to the Apple stocks. This makes it easy to retrieve financial tweets for stocks of interest.</p>
+<p style="text-align: justify;">The system is composed of the following modules: Tweet Extractor, Language Detector, Near Duplicate Detector, Sentiment Classifier, and Active Learner.</p>
+<p style="text-align: center;"><img class="aligncenter" style="line-height: 1.5em;" alt="twitter-pipeline" src="./files/twitter-pipeline.png" width="815" height="118"><em>Twitter Sentiment Analysis Pipeline</em></p>
+<p style="text-align: justify;"><span style="line-height: 1.5em;"><strong>Tweet Extractor.</strong> Uses the Twitter Search API to extract tweets for stocks of interest.</span></p>
+<p style="text-align: justify;"><strong>Language Detector.</strong> Implements a custom <em>n-grams-based language detection model</em>. N-grams are <em>n</em> characters long sequences created by slicing up the text tokens. Using text corpora in several languages, we developed a profile – histogram of n-gram frequencies – for each language. To detect the language of a tweet, we count the n-gram occurrences and we find the profile that matches best. Tweets that do not match the English language profile are filtered-out.</p>
+<p style="text-align: justify;"><strong>Near Duplicate Detector.</strong> Implements a near-duplicate detection algorithm based on <em>shingling</em>. We represent each tweet as a set of 5-shingles, i.e., set of all 5-character sequences contained in the tweet, and compute the Jaccard similarity of the shingle sets. If this similarity is above a given threshold we consider the tweets as near-duplicates. By default, this method would require that each new tweet in the stream is compared to all the exiting tweets, which is unrealistic for the fast stream we have in this use case. To minimize the number of comparisons, we constantly keep an inverted index, which as keys has bi-grams (two word sequences) and as values has a set of tweets where the bi-gram is contained. Thus, when a new tweet arrives, we use the inverted index to retrieve a set of candidate near-duplicates and we only compare those to the tweet currently being processed.</p>
+<p style="text-align: justify;"><strong>Sentiment Classifier.</strong> We model the problem of sentiment analysis as a machine learning classification problem. We train an SVM classifier – initially using batch training and later we make online updates. Periodically, we retrain the model in batch mode to unsure the best performance.</p>
+<p style="text-align: justify;"><strong>Active Learning.</strong> The main challenge of developing an accurate sentiment classifier is the lack of annotated tweets. To address this issue we employ <em>active learning</em>: we allow the learning algorithm to choose the data from which it learns – out of a sample of unlabeled tweets – and thus to achieve better performance with less labeled instances. We use a combination of two techniques: active learning with SVMs and hierarchical sampling for active learning. Initially, to explore the clustering structure of the data, we perform KNN clustering and we select the medoids of each cluster for annotation. Next, we train a SVM classifier and we classify the unlabeled instances – tweets closest to the boundary are elected for annotation. The model is retrained after each annotation. We show empirically that using this strategy we need less annotations to train a more accurate classifier.</p>
+<p style="text-align: justify;"><span style="line-height: 1.5em;">Users can interact with the system via a web interface – analyze the correlation between the sentiment and the stock prices over time, and examine representative tweets for a stock of interest, and annotate tweets. The <a href="http://www.youtube.com/watch?v=U3suxjDmHQA&amp;vq=hd720" target="_blank">video</a> below show a demonstration of the system.</span></p>
+<div align="middle"><object width="640" height="480" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><param name="src" value="http://www.youtube.com/v/U3suxjDmHQA?hl=en_US&amp;version=3&amp;rel=0&amp;vq=hd720"><param name="allowfullscreen" value="true"><embed width="640" height="480" type="application/x-shockwave-flash" src="http://www.youtube.com/v/U3suxjDmHQA?hl=en_US&amp;version=3&amp;rel=0&amp;vq=hd720" allowfullscreen="true" allowscriptaccess="always"></object></div>
+			</div><!-- .entry-content -->
+
+	</article><!-- #post -->
+							
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+		</div><!-- #main -->
+		<footer id="colophon" class="site-footer" role="contentinfo">
+			
+			<div class="site-info-container">
+				<div class="site-info">
+					© Martin Saveki <span class="sep"> · </span> Updated: Dec'2013	<span class="sep"> · </span>
+					Theme: Suits by <a href="http://www.themeweaver.net/" title="Theme Developer" rel="designer">Theme Weaver</a>				</div><!-- .site-info -->
+			</div><!-- .site-info-container -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+
+	<script type="text/javascript" src="./files/functions.js"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-46778883-1', 'martinsaveski.com');
+	  ga('send', 'pageview');
+
+	</script>
+
+</body></html>

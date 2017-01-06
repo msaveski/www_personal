@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Iterative Hybrid Algorithm | Martin Saveski</title>
+	<link rel="stylesheet" id="suits-fonts-css" href="./files/css" type="text/css" media="all">
+	<link rel="stylesheet" id="suits-style-css" href="./files/style.css" type="text/css" media="all">
+	<script type="text/javascript" src="./files/jquery.js"></script>
+	<script type="text/javascript" src="./files/jquery-migrate.min.js"></script>
+	<style type="text/css" id="custom-background-css">
+	body.custom-background { background-color: #ffffff; }
+	</style>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-46778883-1', 'martinsaveski.com');
+	  ga('send', 'pageview');
+
+	</script>
+</head>
+
+<body class="page page-id-159 page-template-default custom-background single-author full-width no-footer-sidebar" style="">
+	<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+			<a class="home-link" href="./index.htm" title="Martin Saveski" rel="home">
+				<h1 class="site-title">Martin Saveski</h1>
+				<h2 class="site-description">Machine Learner. M.Sc. in Data Mining. In a never-ending quest for knowledge.</h2>
+			</a>
+
+			<div id="navbar" class="navbar">
+				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
+					<h3 class="menu-toggle">Menu</h3>
+					<div class="menu-menu-1-container"><ul id="menu-menu-1" class="nav-menu"><li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41"><a href="./index.htm">About me</a></li>
+<li id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83"><a href="./curriculum-vitae.htm">Curriculum Vitae</a></li>
+<li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="./publications.htm">Publications</a></li>
+<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-147"><a href="./projects.htm">Projects</a>
+<ul class="sub-menu">
+	<li id="menu-item-162" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-162"><a href="./cold-start-recommendations.htm">Cold-start Recommendations</a></li>
+	<li id="menu-item-161" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-159 current_page_item menu-item-161"><a href="./iterative-hybrid-algorithm.htm">Iterative Hybrid Algorithm</a></li>
+	<li id="menu-item-167" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-167"><a href="./sentiment-analysis.htm">Sentiment Analysis of Financial Tweets</a></li>
+	<li id="menu-item-163" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-163"><a href="./automatic-wordnet-construction.htm">Automatic Wordnet Construction</a></li>
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="./fingerprint-verification-system.htm">Fingerprint Verification System</a></li>
+	<li id="menu-item-121" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-121"><a href="./ai-agent-for-connect-four.htm">AI agent for Connect Four</a></li>
+</ul>
+</li>
+<li id="menu-item-164" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-164"><a href="./code.htm">Code</a></li>
+<li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55"><a href="./collaborators.htm">Collaborators</a></li>
+<li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a href="./contact.htm">Contact</a></li>
+</ul></div>									</nav><!-- #site-navigation -->
+			</div><!-- #navbar -->
+		</header><!-- #masthead -->
+
+		<div id="main" class="site-main">
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+										
+<article id="post-159" class="post-159 page type-page status-publish hentry">
+	<header class="entry-header">
+		
+		<h1 class="entry-title">Iterative Hybrid Algorithm</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p style="text-align: justify;">This work is done as a coursework in my M.Sc. studies and internship at the Computer Science Lab of&nbsp;University Pierre and Marie Curie under the supervision of professor&nbsp;<a href="http://www-connex.lip6.fr/~artieres/Home/pmwiki.php" target="_blank">Thierry Artières</a>. The results are published as a journal paper in&nbsp;Pattern Recognition Letters.</p>
+<p style="text-align: justify;"><strong>Abstract.</strong> In the typical supervised learning scenario we are given a set of labeled examples and we aim to induce a model that captures the regularity between the input and the class. However, most of the classification algorithms require hundreds or even thousands of labeled examples to achieve satisfactory performance. Data labels come at high costs as they require expert knowledge, while unlabeled data is usually cheap and easy to obtain. The aim of semi-supervised learning is to build models using both labeled and unlabeled data. In this study, we propose an Iterative Hybrid Algorithm which blends a generative and discriminative model with the goal to benefit from the advantages of both and to make most use of the unlabeled data. We conduct experiments on a synthetic data set, which allows us to easily observe the behavior of the method and compare its performance with two other methods, the Hybrid Model proposed and Entropy Minimization. We observe that when there are only few labeled examples, the Iterative Hybrid Algorithm achieves better performance than the Entropy Minimization method, but is outperformed by the Hybrid Model. However, as the number of labeled examples increases the difference between the two methods diminishes. The performance of the Entropy Minimization method is still behind the other two methods.</p>
+<p><strong>More details: </strong><a href="./data/iha-report.pdf" target="_blank">project report</a>, <a href="./data/iha-pres.pdf" target="_blank">presentation</a>, <a href="http://www.sciencedirect.com/science/article/pii/S0167865513001323" target="_blank">journal paper</a>.</p>
+<p><strong style="font-size: 1.5em; line-height: 1.5em;">Summary</strong></p>
+<p style="text-align: justify;">We propose an iterative algorithm for blending generative and discriminative models for semi-supervised learning. The main idea is to use the generative model to incorporate the additional information brought by the unlabeled data (<em>U</em>), and to use the discriminative model to achieve better classification accuracy. We also want to make sure that the two models are not far apart from one another by making constrains on their parameters.</p>
+<p style="text-align: justify;">Initially, we train a generative model only on the labeled data (<em>L</em>), and then we use this optimal solution as a starting position for training a generative model both on <em>L</em> and <em>U</em> . In the main loop of the algorithm, we train a discriminative model on <em>L</em>, constraining its values to be close to the ones of the generative model. Then, we label part of <em>U</em> and together with L, and we use it to train a generative model. We repeat this procedure a number of iterations or until convergence.</p>
+<p style="text-align: center;"><img class=" wp-image-186 aligncenter" alt="iha-chart" src="./files/iha-chart.png" width="667" height="187"></p>
+<p style="text-align: justify;">More formally, the method can be described as follows. The parameters of the discriminative model are denoted as <a href="./files/theta.png"><img class="alignnone  wp-image-191" alt="theta" src="./files/theta.png" width="11" height="17"></a>, and the parameters of the generative model are denoted as &nbsp;<a href="./files/theta-tld.png"><img class="alignnone  wp-image-192" alt="theta-tld" src="./files/theta-tld.png" width="11" height="21"></a>&nbsp;.</p>
+<p style="text-align: center;"><img class=" wp-image-188 aligncenter" alt="iha-alg-latex" src="./files/iha-alg-latex1.png" width="608" height="440"></p>
+<p style="text-align: justify;">The only hyper parameter in the model is λ, which controls the influence of the unlabeled data.&nbsp;Larger values of  imply more influence of <em>U</em>. The final output of the method are the parameters of&nbsp;the discriminative model and they are used to predict the labels of new instances.&nbsp;In addition, one may imagine different strategies of choosing which portion of <em>U</em> is going to be&nbsp;labeled in each iteration of the main loop. One can simply take random instances or choose the ones&nbsp;for which the discriminative model is most confident about. We are in favor of the second idea.</p>
+			</div><!-- .entry-content -->
+
+	</article><!-- #post -->
+							
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+
+		</div><!-- #main -->
+		<footer id="colophon" class="site-footer" role="contentinfo">
+			
+			<div class="site-info-container">
+				<div class="site-info">
+					© Martin Saveki <span class="sep"> · </span> Updated: Dec'2013	<span class="sep"> · </span>
+					Theme: Suits by <a href="http://www.themeweaver.net/" title="Theme Developer" rel="designer">Theme Weaver</a>				</div><!-- .site-info -->
+			</div><!-- .site-info-container -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+
+	<script type="text/javascript" src="./files/functions.js"></script>
+
+</body></html>

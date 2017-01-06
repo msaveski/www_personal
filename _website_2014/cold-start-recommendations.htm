@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Cold-start Recommendations | Martin Saveski</title>
+	<link rel="stylesheet" id="suits-fonts-css" href="./files/css" type="text/css" media="all">
+	<link rel="stylesheet" id="suits-style-css" href="./files/style.css" type="text/css" media="all">
+	<script type="text/javascript" src="./files/jquery.js"></script>
+	<script type="text/javascript" src="./files/jquery-migrate.min.js"></script>
+	<style type="text/css" id="custom-background-css">
+	body.custom-background { background-color: #ffffff; }
+	</style>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-46778883-1', 'martinsaveski.com');
+	  ga('send', 'pageview');
+
+	</script>
+</head>
+
+<body class="page page-id-157 page-template-default custom-background single-author full-width no-footer-sidebar" style="">
+	<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+			<a class="home-link" href="./index.htm" title="Martin Saveski" rel="home">
+				<h1 class="site-title">Martin Saveski</h1>
+				<h2 class="site-description">Machine Learner. M.Sc. in Data Mining. In a never-ending quest for knowledge.</h2>
+			</a>
+
+			<div id="navbar" class="navbar">
+				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
+					<h3 class="menu-toggle">Menu</h3>
+					<div class="menu-menu-1-container"><ul id="menu-menu-1" class="nav-menu"><li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41"><a href="./index.htm">About me</a></li>
+<li id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83"><a href="./curriculum-vitae.htm">Curriculum Vitae</a></li>
+<li id="menu-item-42" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-42"><a href="./publications.htm">Publications</a></li>
+<li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-147"><a href="./projects.htm">Projects</a>
+<ul class="sub-menu">
+	<li id="menu-item-162" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-157 current_page_item menu-item-162"><a href="./cold-start-recommendations.htm">Cold-start Recommendations</a></li>
+	<li id="menu-item-161" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-161"><a href="./iterative-hybrid-algorithm.htm">Iterative Hybrid Algorithm</a></li>
+	<li id="menu-item-167" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-167"><a href="./sentiment-analysis.htm">Sentiment Analysis of Financial Tweets</a></li>
+	<li id="menu-item-163" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-163"><a href="./automatic-wordnet-construction.htm">Automatic Wordnet Construction</a></li>
+	<li id="menu-item-148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-148"><a href="./fingerprint-verification-system.htm">Fingerprint Verification System</a></li>
+	<li id="menu-item-121" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-121"><a href="./ai-agent-for-connect-four.htm">AI agent for Connect Four</a></li>
+</ul>
+</li>
+<li id="menu-item-164" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-164"><a href="./code.htm">Code</a></li>
+<li id="menu-item-55" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-55"><a href="./collaborators.htm">Collaborators</a></li>
+<li id="menu-item-54" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a href="./contact.htm">Contact</a></li>
+</ul></div>									</nav><!-- #site-navigation -->
+			</div><!-- #navbar -->
+		</header><!-- #masthead -->
+
+		<div id="main" class="site-main">
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+										
+<article id="post-157" class="post-157 page type-page status-publish hentry">
+	<header class="entry-header">
+		
+		<h1 class="entry-title">Cold-start Recommendations</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p style="text-align: justify;">Cold-start recommendations are the main topic of my M.Sc. dissertation. The work has been done during a six months internship in Yahoo! Labs in Barcelona under the supervision of&nbsp;<a href="http://iridia.ulb.ac.be/~amantrac/Homepage.html" target="_blank">Amin Mantrach</a>,&nbsp;<a href="http://researchswinger.org/" target="_blank">Daniele Quercia</a>, and&nbsp;<a href="http://www.lsi.upc.edu/~gavalda/" target="_blank">Ricard Gavaldà</a>&nbsp;(as an academic supervisor).</p>
+<h2><strong>Abstract.&nbsp;</strong></h2>
+<p style="text-align: justify;">Recommender systems suggest to users items that they might like (e.g., news articles, songs, movies) and, in doing so, they help users deal with information overload and enjoy a personalized experience. One of the main problems of these systems is the cold-start, i.e., when a new item or user is introduced in the system and no past information is available, no effective recommendation can be produced. The cold-start is a very common problem in practice: modern online platforms have hundreds of new items and millions of visits from logged-out users every day. Despite the importance of this problem not many solutions have been proposed in the literature. We contribute to closing this gap by studying whether it could be overcome without sacrificing performance. We do so by exploiting two aspects: the combination of the content and collaborative information, and the users’ location.</p>
+<p style="text-align: justify;">First, we combine the properties of the items and past user preferences by introducing Joint NMF, a novel recommender system based on Non-negative Matrix Factorization (NMF). We also propose a variation, Joint NMF with Graph Regularization, which accounts for the local geometric structure of the data. We present two training strategies, based on multiplicative update rules and alternating least squares. The experimental results show that the two proposed methods outperform the existing content-based recommenders, which are often used for recommending newly introduced items (item cold-start).</p>
+<p style="text-align: justify;">Second, to exploit user location, we test whether specific interests are linked to specific locations. To this end, we study the geography of user engagement in online news platforms on a random sample of 200K news articles and the corresponding 41M comments posted on the Yahoo! News website for the USA. We find that time zones play an important role on the user engagement: users from the same time zone preferentially engage with each other on the same articles about the same topics. Thus, we propose a time-zone-aware recommender that suggests the most popular articles not in the whole USA but in the users’ time zones, when no past information of the user preferences is available (user cold-start). We find that suggesting recommendations that are specific to time zones improves the recommendation accuracy by a factor of one point five.</p>
+<p><strong>More details: </strong><a href="./data/msc_thesis.pdf" target="_blank">thesis</a>, <a href="./data/msc-presentation.pdf" target="_blank">presentation</a>.</p>
+<p><strong>Item cold-start.</strong></p>
+<p style="text-align: center;"><img class=" wp-image-205 aligncenter" alt="jnmf-chart" src="./files/jnmf-chart.png" width="633" height="348"><em>The intuition behind the Joint&nbsp;Non-negative Matrix Factorization in the context of item cold-start recommendations</em></p>
+<p style="text-align: left;"><strong>User cold-start.</strong></p>
+<p style="text-align: center;"><img class="wp-image-204 aligncenter" alt="commenting-beh" src="./files/commenting-beh.png" width="670" height="381"><em style="line-height: 1.5em;"></em></p>
+<p style="text-align: center;"><em style="line-height: 1.5em;">Influence of the geographic proximity on the commenting behavior</em></p>
+			</div><!-- .entry-content -->
+
+	</article><!-- #post -->
+							
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+
+		</div><!-- #main -->
+		<footer id="colophon" class="site-footer" role="contentinfo">
+			
+			<div class="site-info-container">
+				<div class="site-info">
+					© Martin Saveki <span class="sep"> · </span> Updated: Dec'2013	<span class="sep"> · </span>
+					Theme: Suits by <a href="http://www.themeweaver.net/" title="Theme Developer" rel="designer">Theme Weaver</a>				</div><!-- .site-info -->
+			</div><!-- .site-info-container -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+
+	<script type="text/javascript" src="./files/functions.js"></script>
+
+</body></html>
