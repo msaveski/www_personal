@@ -5,7 +5,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Martin Saveski | {{ page.title }}</title>
+  <title>{{ site.data.main_info.name }} | {{ page.title }}</title>
   <meta name="description" content="Homepage of Martin Saveski">
   <meta name="author" content="Martin Saveski">
 
@@ -48,6 +48,7 @@
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href={{ "/libs/icon.png" | prepend: site.baseurl }}>
+  <link rel="shortcut icon" type="image/png" href={{ "/libs/icon.png" | prepend: site.baseurl }}>
 
 </head>
 <body>
@@ -95,6 +96,24 @@
     </nav>
 
     {{ content}}
+
+    <div class="footer">
+      <p>
+        <span>{{ site.data.main_info.name }}</span>
+        <span class="footer-sep">&middot;</span>
+        <span>{{ site.data.main_info.email }}</span>
+        <span class="footer-sep">&middot;</span>
+        <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </span>
+        <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
+          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+        </span>
+        <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </span>
+      </p>
+    </div>
 
   </div>
 
