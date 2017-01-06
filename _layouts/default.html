@@ -98,21 +98,25 @@
     {{ content}}
 
     <div class="footer">
-      <p>
-        <span>{{ site.data.main_info.name }}</span>
-        <span class="footer-sep">&middot;</span>
-        <span>{{ site.data.main_info.email }}</span>
-        <span class="footer-sep">&middot;</span>
-        <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-        </span>
-        <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
-          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-        </span>
-        <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
-          <i class="fa fa-github" aria-hidden="true"></i>
-        </span>
-      </p>
+      <div class="row">
+        <div class="four columns">
+          {{ site.data.main_info.name }}
+        </div>
+        <div class="four columns">
+          {{ site.data.main_info.email }}
+        </div>
+        <div class="four columns">
+          <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </span>
+          <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </span>
+        </div>
+      </div>
     </div>
 
   </div>
