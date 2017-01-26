@@ -5,7 +5,19 @@ title: Home
 <!-- ========== BIO ========== -->
 <div class="docs-section" id="bio">
   <h4>Bio</h4>
-  {{ site.data.main_info.bio }}
+  <p>
+  I am a PhD student in the <a href="http://socialmachines.media.mit.edu/">Laboratory for Social Machines</a> at the <a href="https://www.media.mit.edu/">MIT Media Lab</a> advised by Deb Roy. 
+  I love studying data and people.
+  My research interests lie at the intersection of Causal Inference, Machine Learning, and Social Network Analysis. 
+  I am passionate about (i) drawing insights from data, (ii) designing interventions, and (iii) running randomized experiments. 
+  I spent the summer of 2016 at LinkedIn working on <a href="{{ '/projects/2016_network-ab-testing.html' | absolute_url }}">randomized experiments in networks</a>. 
+  </p>
+  
+  <p>  
+  Prior to coming to MIT, I interned at Yahoo! Labs in Barcelona and the Amazon Machine Learning team in Berlin. 
+  I spent one year in Paris and one year in Barcelona to do a M.Sc. in Data mining and Knowledge Management. 
+  I got my B.Sc. from Staffordshire University with a First Class honors in Computer Science. 
+  </p>
 </div>
 
 
@@ -30,15 +42,15 @@ title: Home
           <p><i>{{ paper.venue }}</i></p>
            <div class="paper-buttons">
             {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+              <a class="button" href="{{ paper.paper_pdf | absolute_url }}" target="_blank">Paper</a>
             {% endif %}
 
             {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+              <a class="button" href="{{ paper.slides | absolute_url }}" target="_blank">Slides</a>
             {% endif %}
 
             {% if paper.poster %}
-              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+              <a class="button" href="{{ paper.poster | absolute_url }}" target="_blank">Poster</a>
             {% endif %}
 
             {% if paper.video %}
@@ -61,15 +73,15 @@ title: Home
           <p><i>{{ paper.venue }}</i></p>
            <div class="paper-buttons">
             {% if paper.paper_pdf %}
-              <a class="button" href="{{ paper.paper_pdf | prepend: site.baseurl }}" target="_blank">Paper</a>
+              <a class="button" href="{{ paper.paper_pdf | absolute_url }}" target="_blank">Paper</a>
             {% endif %}
 
             {% if paper.slides %}
-              <a class="button" href="{{ paper.slides | prepend: site.baseurl }}" target="_blank">Slides</a>
+              <a class="button" href="{{ paper.slides | absolute_url }}" target="_blank">Slides</a>
             {% endif %}
 
             {% if paper.poster %}
-              <a class="button" href="{{ paper.poster | prepend: site.baseurl }}" target="_blank">Poster</a>
+              <a class="button" href="{{ paper.poster | absolute_url }}" target="_blank">Poster</a>
             {% endif %}
 
             {% if paper.video %}
@@ -164,7 +176,7 @@ title: Home
 <div class="docs-section" id="resume">
   <h4>Resume</h4>
 
-  <p>Full Resume in <a href={{ "/assets/cv/cv_jan_2016.pdf" | prepend: site.baseurl }} target="_blank">PDF</a>.</p>
+  <p>Full Resume in <a href={{ "/assets/cv/cv_jan_2016.pdf" | absolute_url }} target="_blank">PDF</a>.</p>
 
   <!-- The Timeline -->
   <ul class="timeline">
