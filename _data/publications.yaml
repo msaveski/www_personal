@@ -1,10 +1,23 @@
 papers:
+
+  - title: "Detecting Network Effects: Randomizing Over Randomized Experiments."
+    authors: "<b>Martin Saveski*</b>, Jean Pouget-Abadie*, Guillaume Saint-Jacques, Weitao Duan, Souvik Ghosh, Ya Xu, Edo Airoldi"
+    venue: "KDD'17: International Conference on Knowledge Discovery and Data Mining. 2017 (Research Track)"
+    paper_pdf: "/assets/publications/2017_detecting_network_effects/paper.pdf"
+    selected: y
+
+  - title: "Testing for arbitrary interference on experimentation platforms."
+    authors: "Jean Pouget-Abadie*, <b>Martin Saveski*</b>, Guillaume Saint-Jacques, Weitao Duan, Souvik Ghosh, Ya Xu, Edo Airoldi"
+    venue: "Biometrika (in submission)"
+    paper_pdf: "https://arxiv.org/abs/1704.01190"
+    selected: n
+
   - title: "Human Atlas: A Tool for Mapping Social Networks."
     authors: "<b>Martin Saveski</b>, Eric Chu, Soroush Vosoughi, Deb Roy"
     venue: "WWW'16: International Conference on World Wide Web. 2016. (Demo)"
     paper_pdf: "/assets/publications/2016_human_atlas/paper.pdf"
     video: "https://www.youtube.com/watch?v=OQOUHkJdA-U"
-    selected: y
+    selected: n
 
   - title: "Tracking the Yak: An Empirical Study of Yik Yak."
     authors: "<b>Martin Saveski</b>, Sophie Chou, Deb Roy."
@@ -14,7 +27,7 @@ papers:
     selected: n
 
   - title: "Topic Modeling in Twitter: Aggregating Tweets by Conversations"
-    authors: "<b>Martin Saveski*</b>, David Alvarez-Melis*"
+    authors: "David Alvarez-Melis*, <b>Martin Saveski*</b>"
     venue: "ICWSM'16: International AAAI Conference on Web and Social Media. 2016. (Short Paper)"
     paper_pdf: "/assets/publications/2016_twitter_topic_modeling/paper.pdf"
     poster: "/assets/publications/2016_twitter_topic_modeling/poster.pdf"
@@ -66,4 +79,3 @@ papers:
     venue: "Proceedings of ICT Innovations Conference. 2010."
     paper_pdf: "/assets/publications/2010_machine_readable_dictionaries/paper.pdf"
     selected: n
-

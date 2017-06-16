@@ -8,13 +8,13 @@ experiences:
 - place: "LinkedIn"
   time: "Summer 2016"
   title: "Research Scientist, Intern"
-  subtitle: "A/B Testing Group"
+  subtitle: "Experimentation Group"
   category: "work"
 
 - place: "Amazon"
   time: "Summer 2014"
   title: "Machine Learning Scientist, Intern"
-  subtitle: "Scalable Machine Learning Group" 
+  subtitle: "Scalable Machine Learning Group"
   category: "work"
 
 - place: "Yahoo! Labs"

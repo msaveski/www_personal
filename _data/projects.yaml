@@ -1,6 +1,6 @@
 projects:
-  - title: "A/B Testing in Networks"
-    subtitle: "Testing for Network Effects"
+  - title: "Detecting Network Effects"
+    subtitle: "Randomizing Over Randomized Experiments"
     thumbnail: "assets/projects/2016_network-ab/thumbnail.jpg"
     url: "projects/2016_network-ab-testing.html"
     selected: y
