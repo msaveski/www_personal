@@ -10,8 +10,13 @@ jekyll serve
 
 Push to the ML web directory:
 ```
+rm -rf public_html
+mkdir public_html
+```
+```
 ./__deploy.sh
 ```
+
 More info on the [Media Lab wiki](http://wiki.media.mit.edu/view/Necsys/WebPagePersonal).
 
 
