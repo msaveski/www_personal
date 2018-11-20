@@ -1,29 +1,29 @@
 papers:
 
+  - title: "Me, My Echo Chamber, and I: Introspection on Social Media Polarization."
+    authors: "Nabeel Gillani, Ann Yuan, <b>Martin Saveski</b>, Soroush Vosoughi, Deb Roy"
+    venue: "WWW'18: International Conference on the World Wide Web. 2018. <b>(Honarable mention)</b>"
+    paper_pdf: "/assets/publications/2018_social_mirror/paper.pdf"
+    video: "https://drive.google.com/file/d/0B9-P1m1JkZA7UTRuMUFWcTNueXM/view"
+    selected: y
+
   - title: "Detecting Network Effects: Randomizing Over Randomized Experiments."
     authors: "<b>Martin Saveski*</b>, Jean Pouget-Abadie*, Guillaume Saint-Jacques, Weitao Duan, Souvik Ghosh, Ya Xu, Edo Airoldi"
-    venue: "KDD'17: International Conference on Knowledge Discovery and Data Mining. 2017 (Research Track)"
+    venue: "KDD'17: International Conference on Knowledge Discovery and Data Mining. 2017. (Research Track)"
     paper_pdf: "/assets/publications/2017_detecting_network_effects/paper.pdf"
     selected: y
 
   - title: "Testing for arbitrary interference on experimentation platforms."
     authors: "Jean Pouget-Abadie*, <b>Martin Saveski*</b>, Guillaume Saint-Jacques, Weitao Duan, Souvik Ghosh, Ya Xu, Edo Airoldi"
-    venue: "Biometrika (in submission)"
+    venue: "Preprint"
     paper_pdf: "https://arxiv.org/abs/1704.01190"
     selected: n
 
   - title: "Human Atlas: A Tool for Mapping Social Networks."
     authors: "<b>Martin Saveski</b>, Eric Chu, Soroush Vosoughi, Deb Roy"
-    venue: "WWW'16: International Conference on World Wide Web. 2016. (Demo)"
+    venue: "WWW'16: International Conference on the World Wide Web. 2016. (Demo)"
     paper_pdf: "/assets/publications/2016_human_atlas/paper.pdf"
     video: "https://www.youtube.com/watch?v=OQOUHkJdA-U"
-    selected: n
-
-  - title: "Tracking the Yak: An Empirical Study of Yik Yak."
-    authors: "<b>Martin Saveski</b>, Sophie Chou, Deb Roy."
-    venue: "ICWSM'16: International AAAI Conference on Web and Social Media. 2016. (Short Paper)"
-    paper_pdf: "/assets/publications/2016_yikyak/paper.pdf"
-    poster: "/assets/publications/2016_yikyak/poster.pdf"
     selected: n
 
   - title: "Topic Modeling in Twitter: Aggregating Tweets by Conversations"
@@ -33,9 +33,16 @@ papers:
     poster: "/assets/publications/2016_twitter_topic_modeling/poster.pdf"
     selected: n
 
+  - title: "Tracking the Yak: An Empirical Study of Yik Yak."
+    authors: "<b>Martin Saveski</b>, Sophie Chou, Deb Roy."
+    venue: "ICWSM'16: International AAAI Conference on Web and Social Media. 2016. (Short Paper)"
+    paper_pdf: "/assets/publications/2016_yikyak/paper.pdf"
+    poster: "/assets/publications/2016_yikyak/poster.pdf"
+    selected: n
+
   - title: "One-Pass Ranking Models for Low-Latency Product Recommendations"
     authors: "Antonino Freno, <b>Martin Saveski</b>, Rodolphe Jenatton, Cédric Archambeau"
-    venue: "KDD'15: International Conference on Knowledge Discovery and Data Mining. 2015"
+    venue: "KDD'15: International Conference on Knowledge Discovery and Data Mining. 2015. (Industry Track)"
     paper_pdf: "/assets/publications/2015_one_pass_ranking_models/paper.pdf"
     poster: "/assets/publications/2015_one_pass_ranking_models/poster.pdf"
     slides: "/assets/publications/2015_one_pass_ranking_models/slides.pdf"
