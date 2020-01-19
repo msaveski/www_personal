@@ -1,5 +1,16 @@
 papers:
 
+  - title: "Testing for Arbitrary Interference on Experimentation Platforms."
+    authors: "Jean Pouget-Abadie, Guillaume Saint-Jacques<sup>‡</sup>, <b>Martin Saveski<sup>‡</sup></b>, Weitao Duan, Souvik Ghosh, Ya Xu, Edo Airoldi"
+    venue: "Biometrika. 2019."
+    paper_pdf: "/assets/publications/2019_biometrika/paper.pdf"
+    selected: y
+
+  - title: "Observational Causal Inference Using Network Information."
+    authors: "Yan Leng, <b>Martin Saveski</b>, Alex ‘Sandy’ Pentland, Dean Eckles"
+    venue: "NeurIPS'19, Workshop on Graph Representation Learning. 2019."
+    selected: n
+
   - title: "Me, My Echo Chamber, and I: Introspection on Social Media Polarization."
     authors: "Nabeel Gillani, Ann Yuan, <b>Martin Saveski</b>, Soroush Vosoughi, Deb Roy"
     venue: "WWW'18: International Conference on the World Wide Web. 2018. <b>(Honarable mention)</b>"
@@ -8,16 +19,12 @@ papers:
     selected: y
 
   - title: "Detecting Network Effects: Randomizing Over Randomized Experiments."
-    authors: "<b>Martin Saveski*</b>, Jean Pouget-Abadie*, Guillaume Saint-Jacques, Weitao Duan, Souvik Ghosh, Ya Xu, Edo Airoldi"
+    authors: "<b>Martin Saveski<sup>‡</sup></b>, Jean Pouget-Abadie<sup>‡</sup>, Guillaume Saint-Jacques, Weitao Duan, Souvik Ghosh, Ya Xu, Edo Airoldi"
     venue: "KDD'17: International Conference on Knowledge Discovery and Data Mining. 2017. (Research Track)"
     paper_pdf: "/assets/publications/2017_detecting_network_effects/paper.pdf"
+    slides: "/assets/publications/2017_detecting_network_effects/slides.pdf"
+    video: "https://www.youtube.com/watch?v=1v5_CzdRVAc"
     selected: y
-
-  - title: "Testing for arbitrary interference on experimentation platforms."
-    authors: "Jean Pouget-Abadie*, <b>Martin Saveski*</b>, Guillaume Saint-Jacques, Weitao Duan, Souvik Ghosh, Ya Xu, Edo Airoldi"
-    venue: "Preprint"
-    paper_pdf: "https://arxiv.org/abs/1704.01190"
-    selected: n
 
   - title: "Human Atlas: A Tool for Mapping Social Networks."
     authors: "<b>Martin Saveski</b>, Eric Chu, Soroush Vosoughi, Deb Roy"
@@ -27,7 +34,7 @@ papers:
     selected: n
 
   - title: "Topic Modeling in Twitter: Aggregating Tweets by Conversations"
-    authors: "David Alvarez-Melis*, <b>Martin Saveski*</b>"
+    authors: "David Alvarez-Melis<sup>‡</sup>, <b>Martin Saveski<sup>‡</sup></b>"
     venue: "ICWSM'16: International AAAI Conference on Web and Social Media. 2016. (Short Paper)"
     paper_pdf: "/assets/publications/2016_twitter_topic_modeling/paper.pdf"
     poster: "/assets/publications/2016_twitter_topic_modeling/poster.pdf"
@@ -70,7 +77,7 @@ papers:
 
   - title: "Web Services for Stream Mining: A Stream-Based Active Learning Use Case"
     authors: "<b>Martin Saveski</b>, Miha Grčar"
-    venue: "ECML PKDD 2011, Workshop on Planning to Learn and Service-Oriented Knowledge Discovery. 2011."
+    venue: "ECML'11, Workshop on Planning to Learn and Service-Oriented Knowledge Discovery. 2011."
     paper_pdf: "/assets/publications/2011_active_learning/paper.pdf"
     selected: n
 
