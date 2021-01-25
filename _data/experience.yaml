@@ -1,8 +1,15 @@
 experiences:
-- place: "MIT Media Lab"
-  time: "2014 - now"
+
+- place: "Stanford"
+  time: "2020 - now"
+  title: "Postdoc"
+  subtitle: "MS&E"
+  category: "work"
+
+- place: "MIT"
+  time: "2014 - 2020"
   title: "Ph.D. Student"
-  subtitle: "Laboratory for Social Machines"
+  subtitle: "Media Lab, Laboratory for Social Machines"
   category: "school"
 
 - place: "Facebook"
@@ -42,7 +49,7 @@ experiences:
   category: "work"
 
 - place: "Staffordshire University"
-  time: "Sep 2007 - Jun 2010"
+  time: "2007 - 2010"
   title: "B.Sc. Student"
   subtitle: "Computing Science <br/> First Class Honours"
   category: "school"
