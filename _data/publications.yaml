@@ -1,116 +1,17 @@
 papers:
 
-  - title: "The Structure of Toxic Conversations on Twitter"
-    authors: "<b>Martin Saveski</b>, Brandon Roy, Deb Roy"
-    venue: "WebConf'21: The Web Conference (formerly WWW)"
+  - title: "OpenAttack: An Open-source Textual Adversarial Attack Toolkit"
+    authors: "Guoyang Zeng, Fanchao Qi, Qianrui Zhou, Tingji Zhang, <b>Bairu Hou</b>, Yuan Zang, Zhiyuan Liu, Maosong Sun"
+    venue: "ACL'21: Annual Meeting of the Association for Computational Linguistics"
     selected: y
 
-  - title: "Social Catalysts: Characterizing People Who Spark Conversations Among Others"
-    authors: "<b>Martin Saveski</b>, Farshad Kooti, Sylvia Morelli Vitousek, Carlos Diuk, Bryce Bartlett, Lada Adamic"
-    venue: "CSCW'21: Conference on Computer-Supported Cooperative Work and Social Computing"
+  - title: "Try to Substitute: An Unsupervised Chinese Word Sense Disambiguation Method Based on HowNet"
+    authors: "<b>Bairu Hou</b>, Fanchao Qi, Yuan Zang, Xurui Zhang, Zhiyuan Liu, Maosong Sun"
+    venue: "COLING'20: International Conference on Computational Linguistics"
     selected: y
 
-  - title: "Algorithmic and Human Prediction of Success in Human Collaboration From Visual Features"
-    authors: "<b>Martin Saveski<sup>‡</sup></b>, Edmond Awad<sup>‡</sup>, Iyad Rahwan, Manuel Cebrian"
-    venue: "Nature Scientific Reports. 2021"
+  - title: "Learning to Attack: Towards Textual Adversarial Attacking in Real-world Situations"
+    authors: "Yuan Zang, <b>Bairu Hou</b>, Fanchao Qi, Zhiyuan Liu, Xiaojun Meng, Maosong Sun"
+    venue: "Arxiv"
     selected: y
 
-  - title: "Balanced Influence Maximization in the Presence of Homophily"
-    authors: "Md Sanzeed Anwar, <b>Martin Saveski</b>, Deb Roy"
-    venue: "WSDM'21: International Conference on Web Search and Data Mining"
-    paper_pdf: "/assets/publications/2021_balanced_inf_max/paper.pdf"    
-    selected: y
-
-  - title: "Testing for Arbitrary Interference on Experimentation Platforms"
-    authors: "Jean Pouget-Abadie, Guillaume Saint-Jacques<sup>‡</sup>, <b>Martin Saveski<sup>‡</sup></b>, Weitao Duan, Souvik Ghosh, Ya Xu, Edo Airoldi"
-    venue: "Biometrika. 2019."
-    paper_pdf: "/assets/publications/2019_biometrika/paper.pdf"
-    selected: y
-
-  - title: "Observational Causal Inference Using Network Information"
-    authors: "Yan Leng, <b>Martin Saveski</b>, Alex ‘Sandy’ Pentland, Dean Eckles"
-    venue: "NeurIPS'19, Workshop on Graph Representation Learning. 2019."
-    selected: n
-
-  - title: "Me, My Echo Chamber, and I: Introspection on Social Media Polarization"
-    authors: "Nabeel Gillani, Ann Yuan, <b>Martin Saveski</b>, Soroush Vosoughi, Deb Roy"
-    venue: "WWW'18: International Conference on the World Wide Web. 2018. <b>(Honarable mention)</b>"
-    paper_pdf: "/assets/publications/2018_social_mirror/paper.pdf"
-    video: "https://drive.google.com/file/d/0B9-P1m1JkZA7UTRuMUFWcTNueXM/view"
-    selected: y
-
-  - title: "Detecting Network Effects: Randomizing Over Randomized Experiments"
-    authors: "<b>Martin Saveski<sup>‡</sup></b>, Jean Pouget-Abadie<sup>‡</sup>, Guillaume Saint-Jacques, Weitao Duan, Souvik Ghosh, Ya Xu, Edo Airoldi"
-    venue: "KDD'17: International Conference on Knowledge Discovery and Data Mining. 2017. (Research Track)"
-    paper_pdf: "/assets/publications/2017_detecting_network_effects/paper.pdf"
-    slides: "/assets/publications/2017_detecting_network_effects/slides.pdf"
-    video: "https://www.youtube.com/watch?v=1v5_CzdRVAc"
-    selected: y
-
-  - title: "Human Atlas: A Tool for Mapping Social Networks"
-    authors: "<b>Martin Saveski</b>, Eric Chu, Soroush Vosoughi, Deb Roy"
-    venue: "WWW'16: International Conference on the World Wide Web. 2016. (Demo)"
-    paper_pdf: "/assets/publications/2016_human_atlas/paper.pdf"
-    video: "https://www.youtube.com/watch?v=OQOUHkJdA-U"
-    selected: n
-
-  - title: "Topic Modeling in Twitter: Aggregating Tweets by Conversations"
-    authors: "David Alvarez-Melis<sup>‡</sup>, <b>Martin Saveski<sup>‡</sup></b>"
-    venue: "ICWSM'16: International AAAI Conference on Web and Social Media. 2016. (Short Paper)"
-    paper_pdf: "/assets/publications/2016_twitter_topic_modeling/paper.pdf"
-    poster: "/assets/publications/2016_twitter_topic_modeling/poster.pdf"
-    selected: n
-
-  - title: "Tracking the Yak: An Empirical Study of Yik Yak"
-    authors: "<b>Martin Saveski</b>, Sophie Chou, Deb Roy."
-    venue: "ICWSM'16: International AAAI Conference on Web and Social Media. 2016. (Short Paper)"
-    paper_pdf: "/assets/publications/2016_yikyak/paper.pdf"
-    poster: "/assets/publications/2016_yikyak/poster.pdf"
-    selected: n
-
-  - title: "One-Pass Ranking Models for Low-Latency Product Recommendations"
-    authors: "Antonino Freno, <b>Martin Saveski</b>, Rodolphe Jenatton, Cédric Archambeau"
-    venue: "KDD'15: International Conference on Knowledge Discovery and Data Mining. 2015. (Industry Track)"
-    paper_pdf: "/assets/publications/2015_one_pass_ranking_models/paper.pdf"
-    poster: "/assets/publications/2015_one_pass_ranking_models/poster.pdf"
-    slides: "/assets/publications/2015_one_pass_ranking_models/slides.pdf"
-    selected: y
-
-  - title: "Item Cold-Start Recommendations: Learning Local Collective Embeddings"
-    authors: "<b>Martin Saveski</b>, Amin Mantrach."
-    venue: "RecSys'14, ACM Conference Series on Recommender Systems. 2014."
-    paper_pdf: "/assets/publications/2014_item_cold_start/paper.pdf"
-    slides: "/assets/publications/2014_item_cold_start/slides.pdf"
-    code: "https://github.com/msaveski/LCE"
-    selected: y
-
-  - title: "The Geography of Online News Engagement"
-    authors: "<b>Martin Saveski</b>, Daniele Quercia, Amin Mantrach"
-    venue: "Socinfo'14: International Conference on Social Informatics. 2014."
-    paper_pdf: "/assets/publications/2014_geography_of_news/paper.pdf"
-    selected: n
-
-  - title: "Joint semi-supervised Learning of Hidden Conditional Random Fields and Hidden Markov Models"
-    authors: "Yann Soullard, <b>Martin Saveski</b>, Thierry Artières"
-    venue: "Pattern Recognition Letters. 2013."
-    paper_pdf: "/assets/publications/2014_joint_semi_supervised_learning/paper.pdf"
-    selected: n
-
-  - title: "Web Services for Stream Mining: A Stream-Based Active Learning Use Case"
-    authors: "<b>Martin Saveski</b>, Miha Grčar"
-    venue: "ECML'11, Workshop on Planning to Learn and Service-Oriented Knowledge Discovery. 2011."
-    paper_pdf: "/assets/publications/2011_active_learning/paper.pdf"
-    selected: n
-
-  - title: "Automatic Construction of Wordnets by Using Machine Translation and Language Modeling"
-    authors: "<b>Martin Saveski</b>, Igor Trajkovski"
-    venue: "In Proceedings of Seventh Language Technologies Conference. 2010."
-    paper_pdf: "/assets/publications/2010_wordnet_construction/paper.pdf"
-    slides: "/assets/publications/2010_wordnet_construction/slides.pdf"
-    selected: n
-
-  - title: "Development of an English-Macedonian Machine Readable Dictionary by Using Parallel Corpora"
-    authors: "<b>Martin Saveski</b>, Igor Trajkovski"
-    venue: "Proceedings of ICT Innovations Conference. 2010."
-    paper_pdf: "/assets/publications/2010_machine_readable_dictionaries/paper.pdf"
-    selected: n
