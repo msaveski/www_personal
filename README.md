@@ -19,6 +19,11 @@ mkdir public_html
 
 More info on the [Media Lab wiki](http://wiki.media.mit.edu/view/Necsys/WebPagePersonal).
 
+**Stanford links**
+- Use fetch!
+- [Basic WWW for Individual Users](https://uit.stanford.edu/service/web/centralhosting/howto_user)
+- [AFS File Transfer](https://uit.stanford.edu/service/afs/file-transfer/macintosh)
+
 
 ## External Libraries
 - Framework: [Jekyll](http://jekyllrb.com/)
