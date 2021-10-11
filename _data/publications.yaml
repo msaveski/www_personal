@@ -10,6 +10,8 @@ papers:
     authors: "<b>Martin Saveski<sup>‡</sup></b>, Nabeel Gillani<sup>‡</sup>, Ann Yuan, Prashanth Vijayaraghavan, Deb Roy"
     venue: "ICWSM'22: International AAAI Conference on Web and Social Media. 2022."
     paper_pdf: "/assets/publications/2022_flipfeed/paper.pdf"
+    code: "https://github.com/msaveski/twitter_perspective_taking"
+    data: "https://github.com/msaveski/twitter_perspective_taking"
     selected: y
 
   - title: "The Structure of Toxic Conversations on Twitter"
