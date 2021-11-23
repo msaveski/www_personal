@@ -30,14 +30,6 @@ papers:
     code: "https://github.com/facebookresearch/social-catalysts"
     selected: y
 
-  - title: "Algorithmic and Human Prediction of Success in Human Collaboration From Visual Features"
-    authors: "<b>Martin Saveski<sup>‡</sup></b>, Edmond Awad<sup>‡</sup>, Iyad Rahwan, Manuel Cebrian"
-    venue: "Nature Scientific Reports. 2021"
-    paper_pdf: "/assets/publications/2021_esc_the_room/paper.pdf"
-    code: "https://doi.org/10.7910/DVN/HDT2RN"
-    data: "https://doi.org/10.7910/DVN/HDT2RN"
-    selected: y
-
   - title: "Balanced Influence Maximization in the Presence of Homophily"
     authors: "Md Sanzeed Anwar, <b>Martin Saveski</b>, Deb Roy"
     venue: "WSDM'21: International Conference on Web Search and Data Mining"
@@ -45,6 +37,14 @@ papers:
     code: "https://github.com/sanzeed/balanced_influence_maximization"
     data: "https://github.com/sanzeed/balanced_influence_maximization"
     selected: y
+
+  - title: "Algorithmic and Human Prediction of Success in Human Collaboration From Visual Features"
+    authors: "<b>Martin Saveski<sup>‡</sup></b>, Edmond Awad<sup>‡</sup>, Iyad Rahwan, Manuel Cebrian"
+    venue: "Nature Scientific Reports. 2021"
+    paper_pdf: "/assets/publications/2021_esc_the_room/paper.pdf"
+    code: "https://doi.org/10.7910/DVN/HDT2RN"
+    data: "https://doi.org/10.7910/DVN/HDT2RN"
+    selected: n
 
   - title: "Testing for Arbitrary Interference on Experimentation Platforms"
     authors: "Jean Pouget-Abadie, Guillaume Saint-Jacques<sup>‡</sup>, <b>Martin Saveski<sup>‡</sup></b>, Weitao Duan, Souvik Ghosh, Ya Xu, Edo Airoldi"
