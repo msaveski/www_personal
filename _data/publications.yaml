@@ -1,5 +1,18 @@
 papers:
 
+  - title: "Embedding Societal Values into Social Media Algorithms"
+    authors: "Michael Bernstein, Angèle Christin, Jeffrey Hancock, Tatsunori Hashimoto, Chenyan Jia, Michelle S. Lam, Nicole Meister, Nathaniel Persily, Tiziano Piccardi, <b>Martin Saveski</b>, Jeanne Tsai, Johan Ugander, Chunchen Xu"
+    venue: "JOTS'23: Journal of Online Trust and Safety. 2023."
+    paper_pdf: "/assets/publications/2023_embedding_societal_values/paper.pdf"
+    selected: y
+
+  - title: "Counterfactual Evaluation of Peer-Review Assignment Policies"
+    authors: "<b>Martin Saveski</b>, Steven Jecmen, Nihar B. Shah, Johan Ugander"
+    venue: "NeurIPS'23: Advances in Neural Information Processing Systems (Spotlight). 2023."
+    paper_pdf: "/assets/publications/2023_peer_review/paper.pdf"
+    code: "https://github.com/msaveski/counterfactual-peer-review"
+    selected: y
+
   - title: "Engaging Politically Diverse Audiences on Social Media"
     authors: "<b>Martin Saveski</b>, Doug Beeferman, David McClure, Deb Roy"
     venue: "ICWSM'22: International AAAI Conference on Web and Social Media. 2022."
@@ -36,7 +49,7 @@ papers:
     paper_pdf: "/assets/publications/2021_balanced_inf_max/paper.pdf"
     code: "https://github.com/sanzeed/balanced_influence_maximization"
     data: "https://github.com/sanzeed/balanced_influence_maximization"
-    selected: y
+    selected: n
 
   - title: "Algorithmic and Human Prediction of Success in Human Collaboration From Visual Features"
     authors: "<b>Martin Saveski<sup>‡</sup></b>, Edmond Awad<sup>‡</sup>, Iyad Rahwan, Manuel Cebrian"
@@ -50,7 +63,7 @@ papers:
     authors: "Jean Pouget-Abadie, Guillaume Saint-Jacques<sup>‡</sup>, <b>Martin Saveski<sup>‡</sup></b>, Weitao Duan, Souvik Ghosh, Ya Xu, Edo Airoldi"
     venue: "Biometrika. 2019."
     paper_pdf: "/assets/publications/2019_biometrika/paper.pdf"
-    selected: y
+    selected: n
 
   - title: "Observational Causal Inference Using Network Information"
     authors: "Yan Leng, <b>Martin Saveski</b>, Alex ‘Sandy’ Pentland, Dean Eckles"

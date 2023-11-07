@@ -22,10 +22,10 @@ title: Home
   </p>
 
   <p>
-  <b>I'm joining the University of Washington Information School as an Assistant Professor, starting September 2023.</b>
-  I am currently a Postdoc at Stanford University, mentored by <a href="https://web.stanford.edu/~jugander/" target="_blank">Johan Ugander</a>.
+  I'm an Assistant Professor in the Information School at the University of Washington.
+  Before joining UW, I was a Postdoc at Stanford University, mentored by <a href="https://web.stanford.edu/~jugander/" target="_blank">Johan Ugander</a>.
   I received my Ph.D. from MIT in 2020 under the supervision of Deb Roy. 
-  Before coming to MIT, I spent one year in Paris and one year in Barcelona doing a M.Sc. in Data mining and Knowledge Management. 
+  Prior to coming to MIT, I spent one year in Paris and one year in Barcelona doing a M.Sc. in Data mining and Knowledge Management. 
   I got my B.Sc. from Staffordshire University with First Class honors in Computer Science. 
   Throughout my graduate studies, I spent several summers doing internships in industry, including Yahoo! Labs, Amazon, LinkedIn, and Facebook.
   </p> 
@@ -34,7 +34,7 @@ title: Home
 <div class="docs-section" id="prospective-students">  
   <h4>Prospective Students</h4>
   <p>
-  <b>I'm recruiting PhD students to start Fall 2023 at the University of Washington! </b>
+  <b>I'm recruiting PhD students to start Fall 2024 at the University of Washington! </b>
   I'm especially looking for students with a background and/or interest in <i>social network analysis, machine learning, causal inference, or natural language processing</i>, and are passionate about using computational methods to study how online social platforms can be reimagined to <i>enable better conversations, bridge political divides, and reduce the spread of misinformation</i>. 
   If you are interested, please apply to the UW iSchool <a href="https://ischool.uw.edu/programs/phd/admissions" target="_blank">PhD program</a> and mention me in your application.
   If you have any questions, feel free to reach out by email!
@@ -232,40 +232,17 @@ title: Home
   </ul>
 </div>
 
-
 <div class="docs-section" id="template">
-    <h4>Website Design</h4>
-    Since I made this website, many people have found this Jekyll template useful
-    <a href="https://people.csail.mit.edu/davidam/" target="_blank">[1</a>,
-    <a href="https://thashim.github.io/" target="_blank">2</a>,
-    <a href="https://pauljwright.github.io/" target="_blank">3</a>,
-    <a href="https://bayesianbrad.github.io/" target="_blank">4</a>,
-    <a href="https://ahxt.github.io/" target="_blank">5</a>,
-    <a href="https://code-terminator.github.io/" target="_blank">6</a>,
-    <a href="https://dinacmistry.github.io/" target="_blank">7</a>,
-    <a href="https://stanniszhou.github.io/" target="_blank">8</a>,
-    <a href="http://binghongchen.net/" target="_blank">9</a>,
-    <a href="https://jirvin16.github.io/" target="_blank">10</a>,
-    <a href="https://mengliu1998.github.io/" target="_blank">11</a>,
-    <a href="https://amir-rahimi.github.io/" target="_blank">12</a>,
-    <a href="https://taoyds.github.io/" target="_blank">13</a>,
-    <a href="https://zhangjingtun.com/" target="_blank">14</a>,
-    <a href="https://www.saraiht.com/" target="_blank">15</a>,
-    <a href="https://tomyan555.github.io/" target="_blank">16</a>,
-    <a href="https://abhishekgrewal.github.io/" target="_blank">17</a>,
-    <a href="https://xuezhemax.github.io/" target="_blank">18</a>,
-    <a href="https://mmeendez8.github.io/" target="_blank">19</a>,
-    <a href="https://pkassraie.github.io/" target="_blank">20</a>,
-    <a href="https://ninasakhnini.dev/" target="_blank">21</a>,
-    <a href="http://www.yapengtian.com/" target="_blank">22</a>,
-    <a href="https://weijian-li.github.io/" target="_blank">23</a>,
-    <a href="https://www.seas.upenn.edu/~elenter/" target="_blank">24</a>,
-    <a href="https://cm-bf.github.io/" target="_blank">25</a>,
-    <a href="https://stuartburrell.github.io/" target="_blank">26</a>].
-    <!--<br/>-->
-    You can find all the code needed to build your website in this <a href="https://github.com/msaveski/www_personal" target="_blank">GitHub repo</a>.
-    Feel free to use it. <br/>
+  <h4>Website Design</h4>
+  Since I made this website, many people have found this Jekyll template useful [
+  {% for template_user in site.data.template_users.template_users %}
+  <a href="{{ template_user }}" target="_blank">{{ forloop.index }}</a>{% if forloop.last %}{% else %},{% endif %}
+  {% endfor %}
+  ].
+  <!--<br/>-->
+  You can find all the code needed to build your website in this <a href="https://github.com/msaveski/www_personal" target="_blank">GitHub repo</a>.
+  Feel free to use it. <br/>
 
-    If you end up using it, please link to here and drop me an email.
-    I'm always happy to see people using it.
-</div>
+  If you end up using it, please link to here and drop me an email.
+  I'm always happy to see people using it.
+</div>  
