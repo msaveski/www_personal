@@ -33,8 +33,9 @@
   <script src={{ "/libs/external/jquery-3.1.1.min.js" | prepend: site.baseurl }}></script>
 
   <!-- Font-Awesome
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href={{ "/libs/external/font-awesome-4.7.0/css/font-awesome.min.css" | prepend: site.baseurl }}>
+  –––––––––––––––––––––––––––––––––––––––––––––––––– 
+  <link rel="stylesheet" href={{ "/libs/external/font-awesome-4.7.0/css/font-awesome.min.css" | prepend: site.baseurl }}> -->
+  <link rel="stylesheet" href={{ "/libs/external/fontawesome-free-6.6.0-web/css/all.min.css" | prepend: site.baseurl }}>
 
   <!-- Academicons
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -76,16 +77,20 @@
             <p>{{ site.data.main_info.title }}</p>
             <p>{{ site.data.main_info.email }}</p>
             <p>
+              <span onclick="window.open('{{ site.data.main_info.bsky }}')" style="cursor: pointer">
+                <i class="fa-brands fa-bluesky" style="padding-top: 10px"></i>
+              </span>
+
               <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa-brands fa-twitter fa-lg"></i>
               </span>
 
               <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                <i class="fa-brands fa-linkedin fa-lg"></i>
               </span>
 
               <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
-                <i class="fa fa-github" aria-hidden="true"></i>
+                <i class="fa-brands fa-github fa-lg"></i>
               </span>
 
               <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
@@ -120,17 +125,24 @@
           {{ site.data.main_info.email }}
         </div>
         <div class="four columns">
+          <span onclick="window.open('{{ site.data.main_info.bsky }}')" style="cursor: pointer">
+            <i class="fa-brands fa-bluesky fa-sm" style="padding-top: 10px"></i>
+          </span>
+
           <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa-brands fa-twitter"></i>
           </span>
+
           <span onclick="window.open('{{ site.data.main_info.linkedin }}')" style="cursor: pointer">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            <i class="fa-brands fa-linkedin"></i>
           </span>
+
           <span onclick="window.open('{{ site.data.main_info.github }}')" style="cursor: pointer">
-            <i class="fa fa-github" aria-hidden="true"></i>
+            <i class="fa-brands fa-github"></i>
           </span>
+
           <span onclick="window.open('{{ site.data.main_info.google_scholar }}')" style="cursor: pointer">
-            <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
+            <i class="ai ai-google-scholar" aria-hidden="true"></i>
           </span>
         </div>
       </div>
