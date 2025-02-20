@@ -1,16 +1,28 @@
 papers:
 
+  - title: "Community Notes Moderate Engagement With and Diffusion of False Information Online"
+    authors: "Isaac Slaughter, Axel Peytavin, Johan Ugander, <b>Martin Saveski</b>"
+    venue: "Arxiv'25: arXiv preprint. 2025."
+    paper_pdf: "/assets/publications/2025_cn_causal_effects/paper.pdf"
+    selected: y
+
   - title: "Supernotes: Driving Consensus in Crowd-Sourced Fact-Checking"
     authors: "Soham De, Michiel A. Bakker, Jay Baxter, <b>Martin Saveski</b>"
-    venue: "Arxiv'24: arXiv preprint. 2024."
+    venue: "WWW'25: The Web Conference. 2025."
     paper_pdf: "/assets/publications/2024_supernotes/paper.pdf"
     code: "https://github.com/saveski-lab/supernotes"
+    selected: y
+
+  - title: "Social Media Algorithms Can Shape Affective Polarization via Exposure to Antidemocratic Attitudes and Partisan Animosity"
+    authors: "Tiziano Piccardi<sup>‡</sup>, <b>Martin Saveski<sup>‡</sup></b>, Chenyan Jia<sup>‡</sup>, Jeffrey Hancock, Jeanne Tsai, Michael Bernstein"
+    venue: "Arxiv'24: arXiv preprint. 2024."
+    paper_pdf: "/assets/publications/2024_feedwizard_exp/paper.pdf"
     selected: y
 
   - title: "Reranking Social Media Feeds: A Practical Guide for Field Experiments"
     authors: "Tiziano Piccardi<sup>‡</sup>, <b>Martin Saveski<sup>‡</sup></b>, Chenyan Jia<sup>‡</sup>, Jeffrey Hancock, Jeanne L Tsai, Michael S Bernstein"
     venue: "Arxiv'24: arXiv preprint. 2024."
-    paper_pdf: "/assets/publications/2024_feedwizard/paper.pdf"
+    paper_pdf: "/assets/publications/2024_feedwizard_method/paper.pdf"
     code: "https://github.com/StanfordHCI/FeedMonitor"
     selected: y
 
@@ -50,7 +62,7 @@ papers:
 
   - title: "The Structure of Toxic Conversations on Twitter"
     authors: "<b>Martin Saveski</b>, Brandon Roy, Deb Roy"
-    venue: "WWW'21: The Web Conference 2021"
+    venue: "WWW'21: The Web Conference. 2021"
     paper_pdf: "/assets/publications/2021_dtox/paper.pdf"
     code: "https://github.com/msaveski/toxic_conversation_structure"
     data: "https://doi.org/10.7910/DVN/TRWPVB"
